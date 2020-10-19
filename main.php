@@ -7,23 +7,25 @@
     <title>formulaire PHP</title>
 </head>
 <body>
-<div class="p-3 mb-2 bg-light text-dark">
+<div class="container">
+
+<div class="p-3 mb-2  text-dark">
     <h1>Formulaire</h1>
     <form method="POST" action="form.php">
-        <div class="card" style="background-color: #cce5ff" >
-            <div class="card-body">
+        <div class="card shadow p-3 mb-5 bg-light rounded-lg border-0">
+            <div class="card-body ">
                 <div class="form-group">
 
                     <label>Votre Nom :</label>
-                    <input type="text" name="nom"placeholder="Thimote" required />
+                    <input class="form-control" type="text" name="nom"placeholder="Thimote" required />
                 </div>
                 <div class="form-group">
                     <label>Votre Prémon :</label>
-                    <input type="text" name="prenom" placeholder="Dupond" required/>
+                    <input class="form-control" type="text" name="prenom" placeholder="Dupond" required/>
                 </div>
                 <div class="form-group">
                     <label>Mot de passe :</label>
-                    <input type="password" name="password" minlength="8" required />
+                    <input class="form-control" type="password" name="password" minlength="8" required />
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Quelle est votre genre ?</label>
@@ -43,6 +45,7 @@
         </div>
 
     </form>
+</div>
 </div>
 </body>
 </html>
